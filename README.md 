@@ -1,0 +1,64 @@
+project-root/
+├── src/                    # Source directory
+│   ├── config/            # Configuration files
+│   │   ├── database.js    # Database configuration
+│   │   ├── middleware.js  # Express middleware configuration
+│   │   └── config.js      # General configuration (env variables, etc.)
+│   │
+│   ├── controllers/       # Controller layer - Business logic
+│   │   ├── authController.js
+│   │   ├── userController.js
+│   │   └── index.js       # Controller barrel file
+│   │
+│   ├── models/           # Data models (Sequelize)
+│   │   ├── index.js      # Sequelize model loader
+│   │   ├── user.js
+│   │   └── role.js
+│   │
+│   ├── routes/           # Route definitions
+│   │   ├── api/          # API route handlers
+│   │   │   ├── auth.js
+│   │   │   ├── users.js
+│   │   │   └── index.js  # API routes barrel file
+│   │   └── index.js      # Main route loader
+│   │
+│   ├── services/         # Business logic layer
+│   │   ├── authService.js
+│   │   ├── userService.js
+│   │   └── index.js      # Services barrel file
+│   │
+│   ├── middlewares/      # Custom middleware functions
+│   │   ├── auth.js       # Authentication middleware
+│   │   ├── validation.js # Request validation middleware
+│   │   └── error.js      # Error handling middleware
+│   │
+│   ├── utils/            # Utility functions and helpers
+│   │   ├── logger.js
+│   │   ├── validators.js
+│   │   └── helpers.js
+│   │
+│   ├── migrations/       # Database migrations
+│   │   └── timestamp-create-users.js
+│   │
+│   ├── seeders/         # Database seeders
+│   │   └── initial-data.js
+│   │
+│   └── app.js           # Express app initialization
+│
+├── tests/               # Test files
+│   ├── unit/           # Unit tests
+│   ├── integration/    # Integration tests
+│   └── fixtures/       # Test fixtures
+│
+├── logs/               # Application logs
+│   ├── error.log
+│   └── combined.log
+│
+├── .env               # Environment variables
+├── .env.example       # Example environment variables
+├── .gitignore        # Git ignore file
+├── .eslintrc.js      # ESLint configuration
+├── .prettierrc       # Prettier configuration
+├── jest.config.js    # Jest configuration
+├── package.json      # Project dependencies and scripts
+└── README.md         # Project documentation
