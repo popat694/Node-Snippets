@@ -15,12 +15,18 @@ project-root/
 │   │   ├── user.js
 │   │   └── role.js
 │   │
-│   ├── routes/           # Route definitions
-│   │   ├── api/          # API route handlers
-│   │   │   ├── auth.js
-│   │   │   ├── users.js
-│   │   │   └── index.js  # API routes barrel file
-│   │   └── index.js      # Main route loader
+│   ├── repositories/       # Data access layer
+│   │   ├── userRepository.js
+│   │   └── index.js        # Repositories barrel file
+│   │
+│   ├── routes/
+│   │   ├── api/
+│   │   │   ├── v1/          # Version-specific folder
+│   │   │   │   ├── auth.js  # Routes for authentication
+│   │   │   │   ├── users.js # Routes for users
+│   │   │   │   └── index.js # Index file for v1 routes
+│   │   │   └── index.js     # Main API route loader
+│   │   └── index.js         # Main route
 │   │
 │   ├── services/         # Business logic layer
 │   │   ├── authService.js
@@ -54,6 +60,7 @@ project-root/
 │   ├── error.log
 │   └── combined.log
 │
+├── ecosystem.config.js       # PM2 ecosystem configuration
 ├── .env               # Environment variables
 ├── .env.example       # Example environment variables
 ├── .gitignore        # Git ignore file
