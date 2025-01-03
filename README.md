@@ -18,6 +18,7 @@ This repository serves as a boilerplate for Node.js projects, designed to provid
 
 ## Project Structure
 
+```
 project-root/
 ├── src/                    # Source directory
 │   ├── config/            # Configuration files
@@ -89,6 +90,8 @@ project-root/
 ├── jest.config.js    # Jest configuration
 ├── package.json      # Project dependencies and scripts
 └── README.md         # Project documentation
+```
+
 ## Getting Started
 
 ### Prerequisites
